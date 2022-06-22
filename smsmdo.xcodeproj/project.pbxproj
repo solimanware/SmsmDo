@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		4A0E231D28630F0D002A542E /* smsmdoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230D28630F0C002A542E /* smsmdoApp.swift */; };
 		4A0E231E28630F0D002A542E /* smsmdoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230D28630F0C002A542E /* smsmdoApp.swift */; };
-		4A0E231F28630F0D002A542E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230E28630F0C002A542E /* ContentView.swift */; };
-		4A0E232028630F0D002A542E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230E28630F0C002A542E /* ContentView.swift */; };
+		4A0E231F28630F0D002A542E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230E28630F0C002A542E /* HomeView.swift */; };
+		4A0E232028630F0D002A542E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230E28630F0C002A542E /* HomeView.swift */; };
 		4A0E232128630F0D002A542E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E230F28630F0D002A542E /* Assets.xcassets */; };
 		4A0E232228630F0D002A542E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E230F28630F0D002A542E /* Assets.xcassets */; };
+		4A0E23332863C684002A542E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23322863C684002A542E /* ItemModel.swift */; };
+		4A0E23352863CC73002A542E /* TodoBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23342863CC73002A542E /* TodoBarView.swift */; };
+		4A0E23372863D02B002A542E /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23362863D02B002A542E /* TodoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A0E230D28630F0C002A542E /* smsmdoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smsmdoApp.swift; sourceTree = "<group>"; };
-		4A0E230E28630F0C002A542E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A0E230E28630F0C002A542E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4A0E230F28630F0D002A542E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0E231428630F0D002A542E /* smsmdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smsmdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0E231A28630F0D002A542E /* smsmdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smsmdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0E231C28630F0D002A542E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4A0E23322863C684002A542E /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		4A0E23342863CC73002A542E /* TodoBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoBarView.swift; sourceTree = "<group>"; };
+		4A0E23362863D02B002A542E /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,10 @@
 		4A0E230C28630F0C002A542E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4A0E232B2863C415002A542E /* Model */,
+				4A0E232C2863C41E002A542E /* View */,
+				4A0E232D2863C426002A542E /* ViewModel */,
 				4A0E230D28630F0C002A542E /* smsmdoApp.swift */,
-				4A0E230E28630F0C002A542E /* ContentView.swift */,
 				4A0E230F28630F0D002A542E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +84,31 @@
 				4A0E231C28630F0D002A542E /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4A0E232B2863C415002A542E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A0E232C2863C41E002A542E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E230E28630F0C002A542E /* HomeView.swift */,
+				4A0E23342863CC73002A542E /* TodoBarView.swift */,
+				4A0E23362863D02B002A542E /* TodoItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A0E232D2863C426002A542E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E23322863C684002A542E /* ItemModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A0E231F28630F0D002A542E /* ContentView.swift in Sources */,
+				4A0E231F28630F0D002A542E /* HomeView.swift in Sources */,
 				4A0E231D28630F0D002A542E /* smsmdoApp.swift in Sources */,
+				4A0E23352863CC73002A542E /* TodoBarView.swift in Sources */,
+				4A0E23332863C684002A542E /* ItemModel.swift in Sources */,
+				4A0E23372863D02B002A542E /* TodoItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A0E232028630F0D002A542E /* ContentView.swift in Sources */,
+				4A0E232028630F0D002A542E /* HomeView.swift in Sources */,
 				4A0E231E28630F0D002A542E /* smsmdoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
