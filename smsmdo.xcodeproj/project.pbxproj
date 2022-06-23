@@ -13,9 +13,10 @@
 		4A0E232028630F0D002A542E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E230E28630F0C002A542E /* HomeView.swift */; };
 		4A0E232128630F0D002A542E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E230F28630F0D002A542E /* Assets.xcassets */; };
 		4A0E232228630F0D002A542E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0E230F28630F0D002A542E /* Assets.xcassets */; };
-		4A0E23332863C684002A542E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23322863C684002A542E /* ItemModel.swift */; };
+		4A0E23332863C684002A542E /* TodoItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23322863C684002A542E /* TodoItemModel.swift */; };
 		4A0E23352863CC73002A542E /* TodoBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23342863CC73002A542E /* TodoBarView.swift */; };
 		4A0E23372863D02B002A542E /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E23362863D02B002A542E /* TodoItemView.swift */; };
+		4A0E233928644115002A542E /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E233828644115002A542E /* TodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		4A0E231428630F0D002A542E /* smsmdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smsmdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0E231A28630F0D002A542E /* smsmdo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smsmdo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0E231C28630F0D002A542E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		4A0E23322863C684002A542E /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		4A0E23322863C684002A542E /* TodoItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemModel.swift; sourceTree = "<group>"; };
 		4A0E23342863CC73002A542E /* TodoBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoBarView.swift; sourceTree = "<group>"; };
 		4A0E23362863D02B002A542E /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
+		4A0E233828644115002A542E /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +62,9 @@
 		4A0E230C28630F0C002A542E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4A0E232B2863C415002A542E /* Model */,
-				4A0E232C2863C41E002A542E /* View */,
-				4A0E232D2863C426002A542E /* ViewModel */,
+				4A0E232B2863C415002A542E /* Models */,
+				4A0E232C2863C41E002A542E /* Views */,
+				4A0E232D2863C426002A542E /* ViewModels */,
 				4A0E230D28630F0C002A542E /* smsmdoApp.swift */,
 				4A0E230F28630F0D002A542E /* Assets.xcassets */,
 			);
@@ -86,29 +88,30 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		4A0E232B2863C415002A542E /* Model */ = {
+		4A0E232B2863C415002A542E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4A0E233828644115002A542E /* TodoItem.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		4A0E232C2863C41E002A542E /* View */ = {
+		4A0E232C2863C41E002A542E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4A0E230E28630F0C002A542E /* HomeView.swift */,
 				4A0E23342863CC73002A542E /* TodoBarView.swift */,
 				4A0E23362863D02B002A542E /* TodoItemView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		4A0E232D2863C426002A542E /* ViewModel */ = {
+		4A0E232D2863C426002A542E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4A0E23322863C684002A542E /* ItemModel.swift */,
+				4A0E23322863C684002A542E /* TodoItemModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +215,8 @@
 				4A0E231F28630F0D002A542E /* HomeView.swift in Sources */,
 				4A0E231D28630F0D002A542E /* smsmdoApp.swift in Sources */,
 				4A0E23352863CC73002A542E /* TodoBarView.swift in Sources */,
-				4A0E23332863C684002A542E /* ItemModel.swift in Sources */,
+				4A0E23332863C684002A542E /* TodoItemModel.swift in Sources */,
+				4A0E233928644115002A542E /* TodoItem.swift in Sources */,
 				4A0E23372863D02B002A542E /* TodoItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

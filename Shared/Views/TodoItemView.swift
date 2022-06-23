@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct TodoItemView: View {
-    var item : String
+    var todoItem : TodoItem
     var body: some View {
         HStack(){
             Text("👉")
                 .font(.largeTitle)
-            Text(item)
+            Text(todoItem.description)
                 .multilineTextAlignment(.leading)
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.all, 12.0)

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct TodoBarView: View {
-    @Binding var item:String
-    @Binding var items: [String]
+    let todoItemVM: TodoItemModel
+    @State var todoDescription: String = ""
     
     var body: some View {
         HStack(){
@@ -20,13 +20,12 @@ struct TodoBarView: View {
                     .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.921, opacity: 0.735))
                 TextField(
                     "Enter a task TODO 😉",
-                    text: $item
+                    text: $todoDescription
                 )
                 .frame(width: nil, height: 55)
                 .padding()
                 .onSubmit {
-                    items.append(item)
-                    clearTodoBar()
+                    addNewTodo()
                 }
             }
             .padding(.leading, 5.0)
@@ -38,14 +37,14 @@ struct TodoBarView: View {
             }
             .padding(.trailing, 5.0)
             .onTapGesture {
-                items.append(item)
-                clearTodoBar()
+                addNewTodo()
             }
             
         }.frame(width: nil, height: 55)
     }
-    func clearTodoBar(){
-        item = ""
+    func addNewTodo(){
+        todoItemVM.todoItems.append(TodoItem(id: UUID(), description: todoDescription, done: false))
+        todoDescription = ""
     }
 }
 
